@@ -6,16 +6,6 @@ import { useState } from 'react'
 
 export const Form = (props) => {
 
-    const teams = [
-        'Programação',
-        'Front-end',
-        'Devops',
-        'Mobile',
-        'UX e Design',
-        'Data Science',
-        'Inovação e Gestão'
-    ]
-
     const [name, setName] = useState('')
     const [job, setJob] = useState('')
     const [image, setImage] = useState('')
@@ -60,7 +50,7 @@ export const Form = (props) => {
                 <Dropdown 
                     mandatory={true}
                     label='Times' 
-                    items={teams}
+                    items={props.teams}
                     value={team}
                     onInput={value => setTeam(value)}
                 />
