@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Banner from './components/Banner';
+import Footer from './components/Footer';
 import { Form } from './components/Form/Form';
 import Team from './components/Team';
 
@@ -65,6 +66,7 @@ function App() {
       workers={workers.filter(worker => worker.team === team.name)}
       />)}
 
+      <Footer />
     </div>
   );
 }
